@@ -58,3 +58,14 @@ footer {
   justify-content: center; /*Horizontal Align*/
   align-items: center; /*Vertical Align*/
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+}
+.sidebar {
+  flex: 1 20rem;
+}
