@@ -6,7 +6,7 @@
       "image": "/images/iphone7.jpg",
       "description": "Apple iPhone 7 smartphone was launched in September 2016. The phone comes with a 4.70-inch touchscreen display with a resolution of 750x1334 pixels at a pixel density of 326 pixels per inch (ppi) and an aspect ratio of 16:9. Apple iPhone 7 is powered by a 2.34GHz quad-core Apple A10 Fusion processor.",
       "price": 350,
-      "availableSize": [32, 64, 128]
+      "availableSize": ["32", "64", "128"]
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "image": "/images/iphone8.jpg",
       "description": "The iPhone 8 features a 4.7-inch display with a resolution of 1334 by 750 with 326 pixels per inch and a 1400:1 contrast ratio, while the iPhone 8 Plus features a 5.5-inch display with a 1920 by 1080 resolution, 401 pixels per inch, and a 1300:1 contrast ratio.",
       "price": 550,
-      "availableSize": [64, 128, 256]
+      "availableSize": ["64", "128", "256"]
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "image": "/images/iphoneXR.jpg",
       "description": "The Apple iPhone XR is a smartphone that was tested with the iOS 12.0. 1 operating system. This model weighs 6.9 ounces, has a 6.1 inch display, 12-megapixel main camera, and 7-megapixel selfie camera. It comes with 3GB of RAM.",
       "price": 750,
-      "availableSize": [64, 128]
+      "availableSize": ["64", "128"]
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "image": "/images/iphoneX.jpg",
       "description": "The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor. Launched November 3, 2017, discontinued with the launch of the iPhone XR, XS, and XS Max.",
       "price": 900,
-      "availableSize": [64, 256]
+      "availableSize": ["64", "256"]
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "image": "/images/iphone11.jpg",
       "description": "The iPhone 11 succeeds the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a 'Liquid Retina HD Display.' It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio, 625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting, and wide color support.",
       "price": 1000,
-      "availableSize": [64, 256, 512]
+      "availableSize": ["64", "256", "512"]
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "image": "/images/iphonese.jpg",
       "description": "At A Glance. The original iPhone SE was a budget 4-inch iPhone before being discontinued in 2018, but Apple revived the name in April 2020 with a new 4.7-inch model that looks like an iPhone 8 with internals similar to those of the iPhone 11. It features an A13 Bionic chip, 3GB RAM, and a low starting price of $399.",
       "price": 600,
-      "availableSize": [64, 128, 256]
+      "availableSize": ["64", "128", "256"]
     }
   ]
 }

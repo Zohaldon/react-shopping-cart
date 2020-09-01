@@ -13,15 +13,43 @@ class App extends React.Component {
     };
   }
 
-  sortProducts(event) {
-    // implement the logic for sort
-    console.log(event.target.value);
-  }
+  sortProducts = (event) => {
+    const sort = event.target.value;
+    this.setState({
+      sort: event.target.value,
+      products: this.state.products
+        .slice()
+        .sort((a, b) =>
+          sort === "lowest"
+            ? a.price > b.price
+              ? 1
+              : -1
+            : sort === "highest"
+            ? a.price < b.price
+              ? 1
+              : -1
+            : a.id > b.id
+            ? 1
+            : -1
+        ),
+    });
+  };
 
-  filterProducts(event) {
-    //implement the logic for size filter
-    console.log(event.target.value);
-  }
+  filterProducts = (event) => {
+    if (event.target.value === "") {
+      this.setState({
+        size: event.target.value,
+        products: data.products,
+      });
+    } else {
+      this.setState({
+        size: event.target.value,
+        products: data.products.filter(
+          (product) => product.availableSize.indexOf(event.target.value) >= 0
+        ),
+      });
+    }
+  };
 
   render() {
     return (
