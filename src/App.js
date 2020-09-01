@@ -2,6 +2,7 @@ import React from "react";
 import data from "./data.json";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
+import Cart from "./components/Cart";
 
 class App extends React.Component {
   constructor() {
@@ -13,6 +14,11 @@ class App extends React.Component {
       sort: "",
     };
   }
+
+  removeFromCart = (product) => {
+    const cartItems = this.state.cartItems.slice();
+    this.setState({ cartItems: cartItems.filter((x) => x.id != product.id) });
+  };
 
   addToCart = (product) => {
     const cartItems = this.state.cartItems.slice();
@@ -26,6 +32,7 @@ class App extends React.Component {
     if (!alreadyInCart) {
       cartItems.push({ ...product, count: 1 });
     }
+    this.setState({ cartItems });
   };
 
   sortProducts = (event) => {
@@ -82,9 +89,17 @@ class App extends React.Component {
                 filterProducts={this.filterProducts}
                 sortProducts={this.sortProducts}
               ></Filter>
-              <Products products={this.state.products}></Products>
+              <Products
+                products={this.state.products}
+                addToCart={this.addToCart}
+              ></Products>
             </div>
-            <div className="sidebar">Cart items</div>
+            <div className="sidebar">
+              <Cart
+                cartItems={this.state.cartItems}
+                removeFromCart={this.removeFromCart}
+              ></Cart>
+            </div>
           </div>
         </main>
         <footer>All rights are reserved</footer>
