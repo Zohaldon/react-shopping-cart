@@ -13,12 +13,14 @@ class App extends React.Component {
     };
   }
 
-  sortProducts(sort) {
+  sortProducts(event) {
     // implement the logic for sort
+    console.log(event.target.value);
   }
 
-  filterProducts(size) {
+  filterProducts(event) {
     //implement the logic for size filter
+    console.log(event.target.value);
   }
 
   render() {
