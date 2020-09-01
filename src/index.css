@@ -1,9 +1,60 @@
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+  font-size: 62.5%; /*Standard size for fonts*/
+  box-sizing: border-box; /*Better handling of ui elements*/
 }
+
 body,
 #root {
-  height: 100vh;
+  height: 100vh; /*Occupy full space*/
   margin: 0;
+}
+
+body,
+input,
+select,
+textarea {
+  font-size: 1.6em; /*16 pixel*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 5em 1fr 5em; /* 5em = 50 px, Fist one for header and last one is for footer*/
+  grid-template-columns: 1fr;
+  height: 100%; /*occupy full space*/
+}
+
+header {
+  grid-area: header;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center; /*Vertical align*/
+  padding: 0.5rem;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8000;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: #ffffff;
+  display: flex; /*Make all rightts reserved to appear at the center part of the footer*/
+  justify-content: center; /*Horizontal Align*/
+  align-items: center; /*Vertical Align*/
 }
